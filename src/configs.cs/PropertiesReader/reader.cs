@@ -1,11 +1,9 @@
-﻿using System;
+﻿using PropertiesReader.Properties;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Configuration;
-using PropertiesReader.Properties;
-using properties.Properties;
 
 namespace PropertiesReader
 {
@@ -32,8 +30,8 @@ namespace PropertiesReader
                     case "password":
                         value = s.password;
                         break;
-                    case "portnumber":
-                        value = s.portnumber;
+                    case "port":
+                        value = s.port;
                         break;
                     default:
                         break;

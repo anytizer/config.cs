@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace properties.Properties {
+namespace PropertiesReader.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -62,9 +62,9 @@ namespace properties.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("3036")]
-        public string portnumber {
+        public string port {
             get {
-                return ((string)(this["portnumber"]));
+                return ((string)(this["port"]));
             }
         }
     }

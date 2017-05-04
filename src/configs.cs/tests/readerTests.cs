@@ -5,11 +5,11 @@ using PropertiesReader;
 namespace tests
 {
     [TestClass]
-    public class UnitTest1
+    public class readerTests
     {
         [TestMethod]
         [TestCategory("Configurarations")]
-        public void TestHostname()
+        public void ReadHostname()
         {
             reader r = new reader();
 
@@ -21,7 +21,7 @@ namespace tests
 
         [TestMethod]
         [TestCategory("Configurarations")]
-        public void TestUsername()
+        public void ReadUsername()
         {
             reader r = new reader();
 
@@ -33,7 +33,7 @@ namespace tests
 
         [TestMethod]
         [TestCategory("Configurarations")]
-        public void TestPassword()
+        public void ReadPassword()
         {
             reader r = new reader();
 
@@ -45,7 +45,7 @@ namespace tests
 
         [TestMethod]
         [TestCategory("Configurarations")]
-        public void TestDatabase()
+        public void ReadDatabase()
         {
             reader r = new reader();
 
@@ -57,12 +57,24 @@ namespace tests
 
         [TestMethod]
         [TestCategory("Configurarations")]
-        public void TestPort()
+        public void ReadPort()
         {
             reader r = new reader();
 
             int expected = 3036;
-            int actual = Convert.ToInt32(r.read("portnumber"));
+            int actual = Convert.ToInt32(r.read("port"));
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        [TestCategory("Configurarations")]
+        public void ReadInvalid()
+        {
+            reader r = new reader();
+
+            string expected = "";
+            string actual = r.read("invalid");
 
             Assert.AreEqual(expected, actual);
         }

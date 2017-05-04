@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B88A8C77-7B95-4E7B-9A2F-C852BCF84E38}</ProjectGuid>
+    <ProjectGuid>{D33DFCAA-2E66-4B1E-AD08-CD77D5C57AEB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>tests</RootNamespace>
@@ -51,12 +51,12 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="readerTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\properties\PropertiesReader.csproj">
-      <Project>{AE85FBD8-1020-4EE0-8974-F77B3A76AA17}</Project>
+    <ProjectReference Include="..\PropertiesReader\PropertiesReader.csproj">
+      <Project>{809CABF6-A6ED-480C-BA59-2DB65096CA72}</Project>
       <Name>PropertiesReader</Name>
     </ProjectReference>
   </ItemGroup>
