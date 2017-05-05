@@ -1,9 +1,6 @@
-﻿using PropertiesReader.Properties;
+﻿using PropertiesReader;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime;
 
 namespace PropertiesReader
 {
@@ -11,7 +8,7 @@ namespace PropertiesReader
     {
         public string read(string index)
         {
-            Settings s = new Settings();
+            settings s = new settings();
             string value = "";
 
             try
@@ -44,6 +41,40 @@ namespace PropertiesReader
             }
 
             return value;
+        }
+
+        public string environment()
+        {
+            string environment = null;
+            string environment_temp = new environments().environment;
+
+            switch (environment_temp.ToLower())
+            {
+                case "live":
+                case "publish":
+                case "prod":
+                case "production":
+                case "release":
+                    environment = "live";
+                    break;
+                case "test":
+                case "debug":
+                case "staging":
+                case "demo":
+                    environment = "staging";
+                    break;
+                case "dev":
+                case "lan":
+                case "local":
+                case "internal":
+                    environment = "dev";
+                    break;
+                default:
+                    environment = "dev";
+                    break;
+            }
+
+            return environment;
         }
     }
 }

@@ -2,11 +2,22 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PropertiesReader;
 
-namespace tests
+namespace PropertiesReader.Tests
 {
-    [TestClass]
+    [TestClass()]
     public class readerTests
     {
+        [TestMethod()]
+        [TestCategory("Environment")]
+        public void environmentTest()
+        {
+            reader r = new reader();
+            string environment = r.environment();
+            string expected = "dev";
+
+            Assert.AreEqual(expected, environment);
+        }
+
         [TestMethod]
         [TestCategory("Configurarations")]
         public void ReadHostname()
