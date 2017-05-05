@@ -46,7 +46,7 @@
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="settings1.Designer.cs">
+    <Compile Include="settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>settings.settings</DependentUpon>
@@ -62,7 +62,7 @@
     </None>
     <None Include="settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>settings1.Designer.cs</LastGenOutput>
+      <LastGenOutput>settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
