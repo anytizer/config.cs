@@ -1,17 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{809CABF6-A6ED-480C-BA59-2DB65096CA72}</ProjectGuid>
+    <ProjectGuid>{21CB29A8-493F-42BE-852A-D19B10A8B82C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PropertiesReader</RootNamespace>
-    <AssemblyName>PropertiesReader</AssemblyName>
+    <RootNamespace>configs</RootNamespace>
+    <AssemblyName>configs</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,37 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="environments.Designer.cs">
-      <DependentUpon>environments.settings</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-    <Compile Include="settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>settings.settings</DependentUpon>
-    </Compile>
-    <Compile Include="reader.cs" />
+    <Compile Include="fconfig.cs" />
+    <Compile Include="ftp.cs" />
+    <Compile Include="ftpconfig.cs" />
+    <Compile Include="iconfigwriter.cs" />
+    <Compile Include="mconfig.cs" />
+    <Compile Include="mysql.cs" />
+    <Compile Include="mysqlconfig.cs" />
+    <Compile Include="purposes.cs" />
+    <Compile Include="structure.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
-    <None Include="environments.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>environments.Designer.cs</LastGenOutput>
-    </None>
     <None Include="packages.config" />
-    <None Include="settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>settings.Designer.cs</LastGenOutput>
-    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>
