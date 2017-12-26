@@ -23,26 +23,26 @@ namespace gui.editors
 
         private void APIEditor_Load(object sender, EventArgs e)
         {
-            api m = read();
+            structure_api m = read();
             textBox1.Text = m.key.value;
             textBox2.Text = m.secret.value;
         }
 
-        private api read()
+        private structure_api read()
         {
-            apiconfig fc = new apiconfig(file);
-            api f = fc.read();
+            rw_api fc = new rw_api(file);
+            structure_api f = fc.read();
 
             return f;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            api f = new api();
+            structure_api f = new structure_api();
             f.key.value = textBox1.Text;
             f.secret.value = textBox2.Text;
 
-            apiconfig fc = new apiconfig(file);
+            rw_api fc = new rw_api(file);
             fc.write(f);
 
             this.Dispose();

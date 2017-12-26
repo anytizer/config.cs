@@ -27,7 +27,7 @@ namespace gui.editors
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            mysql m = read();
+            structure_mysql m = read();
             textBox1.Text = m.host.value;
             textBox2.Text = m.username.value;
             textBox3.Text = m.password.value;
@@ -35,24 +35,24 @@ namespace gui.editors
             textBox5.Text = m.database.value;
         }
 
-        private mysql read()
+        private structure_mysql read()
         {
-            mysqlconfig mc = new mysqlconfig(file);
-            mysql m = mc.read();
+            rw_mysql mc = new rw_mysql(file);
+            structure_mysql m = mc.read();
 
             return m;
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            mysql m = new mysql();
+            structure_mysql m = new structure_mysql();
             m.host.value = textBox1.Text;
             m.username.value = textBox2.Text;
             m.password.value = textBox3.Text;
             m.port.value = textBox4.Text;
             m.database.value = textBox5.Text;
 
-            mysqlconfig mc = new mysqlconfig(file);
+            rw_mysql mc = new rw_mysql(file);
             mc.write(m);
 
             this.Dispose();

@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace configs.structures
 {
-    public class ftp
+    public class structure_ftp
     {
         public structure host;
         public structure port;
         public structure username;
         public structure password;
 
-        public ftp()
+        public structure_ftp()
         {
             host = new structure() {
                 id = new Guid("450D1841-70F6-4982-A33B-4FB4B6AD5C98"),

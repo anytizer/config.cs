@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace configs.interfacing
 {
-    public abstract class fconfig : iconfigwriter
+    public abstract class config_api : iconfigwriter
     {
-        public abstract ftp read();
-        public abstract bool write(ftp f);
+        public abstract structure_api read();
+        public abstract bool write(structure_api f);
     }
 }

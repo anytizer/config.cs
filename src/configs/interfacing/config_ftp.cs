@@ -2,16 +2,15 @@
 using configs.structures;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace configs.interfacing
 {
-    public abstract class mconfig : iconfigwriter
+    public abstract class config_ftp : iconfigwriter
     {
-        public abstract mysql read();
-        public abstract bool write(mysql m);
+        public abstract structure_ftp read();
+        public abstract bool write(structure_ftp f);
     }
 }

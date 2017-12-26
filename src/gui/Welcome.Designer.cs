@@ -129,14 +129,14 @@
             // userOneToolStripMenuItem
             // 
             this.userOneToolStripMenuItem.Name = "userOneToolStripMenuItem";
-            this.userOneToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.userOneToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.userOneToolStripMenuItem.Text = "User One";
             this.userOneToolStripMenuItem.Click += new System.EventHandler(this.userOneToolStripMenuItem_Click);
             // 
             // userTwoToolStripMenuItem
             // 
             this.userTwoToolStripMenuItem.Name = "userTwoToolStripMenuItem";
-            this.userTwoToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.userTwoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.userTwoToolStripMenuItem.Text = "User Two";
             this.userTwoToolStripMenuItem.Click += new System.EventHandler(this.userTwoToolStripMenuItem_Click);
             // 
@@ -166,7 +166,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(102, 106);
+            this.textBox1.Location = new System.Drawing.Point(84, 54);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(320, 20);
             this.textBox1.TabIndex = 1;
@@ -174,7 +174,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(36, 109);
+            this.label1.Location = new System.Drawing.Point(18, 57);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 13);
             this.label1.TabIndex = 2;

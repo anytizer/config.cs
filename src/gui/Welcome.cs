@@ -98,12 +98,12 @@ namespace gui
 
         private void userOneToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            set(new UserEditor());
+            set(new UserEditor(names.USER_ONE));
         }
 
         private void userTwoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            set(new UserEditor());
+            set(new UserEditor(names.USER_TWO));
         }
 
         private void aPIsToolStripMenuItem1_Click(object sender, EventArgs e)

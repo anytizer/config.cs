@@ -24,30 +24,30 @@ namespace gui.editors
 
         private void FTPEditor_Load(object sender, EventArgs e)
         {
-            ftp f = read();
+            structure_ftp f = read();
             textBox1.Text = f.host.value;
             textBox2.Text = f.username.value;
             textBox3.Text = f.password.value;
             textBox4.Text = f.port.value;
         }
 
-        private ftp read()
+        private structure_ftp read()
         {
-            ftpconfig fc = new ftpconfig(file);
-            ftp f = fc.read();
+            rw_ftp fc = new rw_ftp(file);
+            structure_ftp f = fc.read();
 
             return f;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ftp f = new ftp();
+            structure_ftp f = new structure_ftp();
             f.host.value = textBox1.Text;
             f.username.value = textBox2.Text;
             f.password.value = textBox3.Text;
             f.port.value = textBox4.Text;
 
-            ftpconfig fc = new ftpconfig(file);
+            rw_ftp fc = new rw_ftp(file);
             fc.write(f);
 
             this.Dispose();

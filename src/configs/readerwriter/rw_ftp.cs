@@ -10,28 +10,28 @@ using System.Threading.Tasks;
 
 namespace configs.readerwriter
 {
-    public class apiconfig : api_config
+    public class rw_ftp : config_ftp
     {
-        public apiconfig(string file)
+        public rw_ftp(string file)
         {
             this.file = file;
         }
 
-        public override api read()
+        public override structure_ftp read()
         {
             this.Touch(file);
 
             string json = File.ReadAllText(file);
-            api f = JsonConvert.DeserializeObject<api>(json);
+            structure_ftp f = JsonConvert.DeserializeObject<structure_ftp>(json);
             if(null == f)
             {
-                f = new api();
+                f = new structure_ftp();
             }
 
             return f;
         }
 
-        public override bool write(api f)
+        public override bool write(structure_ftp f)
         {
             string json = JsonConvert.SerializeObject(f);
             File.WriteAllText(file, json);

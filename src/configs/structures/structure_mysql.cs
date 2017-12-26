@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace configs.structures
 {
-    public class mysql
+    public class structure_mysql
     {
         public structure host;
         public structure port;
@@ -14,7 +14,7 @@ namespace configs.structures
         public structure password;
         public structure database;
 
-        public mysql()
+        public structure_mysql()
         {
             host = new structure() {
                 id = new Guid("9474AB3B-717B-46CC-9915-C843DA66DDC5"),

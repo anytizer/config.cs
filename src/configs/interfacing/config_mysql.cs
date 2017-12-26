@@ -2,15 +2,16 @@
 using configs.structures;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace configs.interfacing
 {
-    public abstract class api_config : iconfigwriter
+    public abstract class config_mysql : iconfigwriter
     {
-        public abstract api read();
-        public abstract bool write(api f);
+        public abstract structure_mysql read();
+        public abstract bool write(structure_mysql m);
     }
 }

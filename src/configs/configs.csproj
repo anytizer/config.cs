@@ -43,16 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="interfacing\api_config.cs" />
-    <Compile Include="interfacing\fconfig.cs" />
-    <Compile Include="readerwriter\apiconfig.cs" />
-    <Compile Include="structures\ftp.cs" />
-    <Compile Include="readerwriter\ftpconfig.cs" />
+    <Compile Include="interfacing\config_api.cs" />
+    <Compile Include="interfacing\config_ftp.cs" />
+    <Compile Include="interfacing\config_user.cs" />
+    <Compile Include="readerwriter\rw_user.cs" />
+    <Compile Include="readerwriter\rw_api.cs" />
+    <Compile Include="structures\structure_user.cs" />
+    <Compile Include="structures\structure_ftp.cs" />
+    <Compile Include="readerwriter\rw_ftp.cs" />
     <Compile Include="interfacing\iconfigwriter.cs" />
-    <Compile Include="interfacing\mconfig.cs" />
-    <Compile Include="structures\api.cs" />
-    <Compile Include="structures\mysql.cs" />
-    <Compile Include="readerwriter\mysqlconfig.cs" />
+    <Compile Include="interfacing\config_mysql.cs" />
+    <Compile Include="structures\structure_api.cs" />
+    <Compile Include="structures\structure_mysql.cs" />
+    <Compile Include="readerwriter\rw_mysql.cs" />
     <Compile Include="purposes.cs" />
     <Compile Include="structures\structure.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

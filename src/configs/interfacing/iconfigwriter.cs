@@ -12,7 +12,7 @@ namespace configs.interfacing
     public abstract class iconfigwriter
     {
         //public abstract T Parameters<T> { get; set; }
-        public string file = "file.settings";
+        public string file = "filename.settings";
 
         public void Touch(string fileName)
         {

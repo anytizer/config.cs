@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace configs.structures
 {
-    public class api
+    public class structure_api
     {
         public structure key;
         public structure secret;
 
-        public api()
+        public structure_api()
         {
             key = new structure() {
                 id = new Guid("0AA0C665-C07E-458E-9A4F-DD638E7578B1"),

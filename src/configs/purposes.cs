@@ -14,7 +14,7 @@ namespace configs
         public string FTP_ONE = "ftp-one.settings";
         public string FTP_TWO = "ftp-two.settings";
 
-        public string SOFTWARE_ID = "software.settings";
+        public string SOFTWARE_ID = "software-id.settings";
 
         public string USER_ONE = "user-one.settings";
         public string USER_TWO = "user-two.settings";

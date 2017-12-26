@@ -10,28 +10,28 @@ using System.Threading.Tasks;
 
 namespace configs.readerwriter
 {
-    public class mysqlconfig : mconfig
+    public class rw_mysql : config_mysql
     {
-        public mysqlconfig(string file)
+        public rw_mysql(string file)
         {
             this.file = file;
         }
 
-        public override mysql read()
+        public override structure_mysql read()
         {
             this.Touch(file);
 
             string json = File.ReadAllText(file);
-            mysql m = JsonConvert.DeserializeObject<mysql>(json);
+            structure_mysql m = JsonConvert.DeserializeObject<structure_mysql>(json);
             if(null == m)
             {
-                m = new mysql();
+                m = new structure_mysql();
             }
 
             return m;
         }
 
-        public override bool write(mysql m)
+        public override bool write(structure_mysql m)
         {
             string json = JsonConvert.SerializeObject(m);
             File.WriteAllText(file, json);
