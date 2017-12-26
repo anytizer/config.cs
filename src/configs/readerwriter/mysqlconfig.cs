@@ -1,4 +1,6 @@
-﻿using Newtonsoft.Json;
+﻿using configs.interfacing;
+using configs.structures;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -6,11 +8,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace configs
+namespace configs.readerwriter
 {
     public class mysqlconfig : mconfig
     {
-        string file = "mysql.settings";
         public mysqlconfig(string file)
         {
             this.file = file;

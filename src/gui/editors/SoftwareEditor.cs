@@ -12,8 +12,10 @@ namespace gui.editors
 {
     public partial class SoftwareEditor : Form
     {
-        public SoftwareEditor()
+        string file = "sotware.settings";
+        public SoftwareEditor(string file)
         {
+            this.file = file;
             InitializeComponent();
         }
 

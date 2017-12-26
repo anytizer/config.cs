@@ -5,13 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace configs
+namespace configs.interfacing
 {
     // @see https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/generic-interfaces
 
     public abstract class iconfigwriter
     {
         //public abstract T Parameters<T> { get; set; }
+        public string file = "file.settings";
 
         public void Touch(string fileName)
         {

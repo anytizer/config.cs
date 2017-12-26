@@ -1,4 +1,6 @@
 ﻿using configs;
+using configs.readerwriter;
+using configs.structures;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -17,8 +19,9 @@ namespace gui.editors
     {
         string file = "mysql.settings";
 
-        public MySQLEditor()
+        public MySQLEditor(string file)
         {
+            this.file = file;
             InitializeComponent();
         }
 

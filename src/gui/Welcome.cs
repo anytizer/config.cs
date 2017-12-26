@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -45,7 +46,9 @@ namespace gui
 
         private void Welcome_Load(object sender, EventArgs e)
         {
-
+            FileInfo fi = new FileInfo(".");
+            textBox1.ReadOnly = true;
+            textBox1.Text = fi.Directory.FullName;
         }
 
         private void aPIsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -55,7 +58,7 @@ namespace gui
 
         private void softwareIDToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            set(new SoftwareEditor());
+            set(new SoftwareEditor(names.SOFTWARE_ID));
         }
 
         private void userToolStripMenuItem_Click(object sender, EventArgs e)
@@ -65,22 +68,22 @@ namespace gui
 
         private void dropboxToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            set(new APIEditor());
+            set(new APIEditor(names.API_ONE));
         }
 
         private void twitterToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            set(new APIEditor());
+            set(new APIEditor(names.API_TWO));
         }
 
         private void serverOneToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            set(new MySQLEditor());
+            set(new MySQLEditor(names.MYSQL_ONE));
         }
 
         private void serverTwoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            set(new MySQLEditor());
+            set(new MySQLEditor(names.MYSQL_TWO));
         }
 
         private void hostOneToolStripMenuItem_Click(object sender, EventArgs e)

@@ -1,4 +1,6 @@
-﻿using Newtonsoft.Json;
+﻿using configs.interfacing;
+using configs.structures;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -6,31 +8,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace configs
+namespace configs.readerwriter
 {
-    public class ftpconfig : fconfig
+    public class apiconfig : api_config
     {
-        string file = "ftp.settings";
-        public ftpconfig(string file)
+        public apiconfig(string file)
         {
             this.file = file;
         }
 
-        public override ftp read()
+        public override api read()
         {
             this.Touch(file);
 
             string json = File.ReadAllText(file);
-            ftp f = JsonConvert.DeserializeObject<ftp>(json);
+            api f = JsonConvert.DeserializeObject<api>(json);
             if(null == f)
             {
-                f = new ftp();
+                f = new api();
             }
 
             return f;
         }
 
-        public override bool write(ftp f)
+        public override bool write(api f)
         {
             string json = JsonConvert.SerializeObject(f);
             File.WriteAllText(file, json);

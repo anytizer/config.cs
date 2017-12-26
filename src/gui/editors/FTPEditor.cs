@@ -1,4 +1,6 @@
 ﻿using configs;
+using configs.readerwriter;
+using configs.structures;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,7 +22,7 @@ namespace gui.editors
             InitializeComponent();
         }
 
-       private void FTPEditor_Load(object sender, EventArgs e)
+        private void FTPEditor_Load(object sender, EventArgs e)
         {
             ftp f = read();
             textBox1.Text = f.host.value;
@@ -37,8 +39,8 @@ namespace gui.editors
             return f;
         }
 
-    private void button1_Click(object sender, EventArgs e)
-    {
+        private void button1_Click(object sender, EventArgs e)
+        {
             ftp f = new ftp();
             f.host.value = textBox1.Text;
             f.username.value = textBox2.Text;
