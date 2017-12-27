@@ -3,21 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26510.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "configs.tests", "tests\configs.tests.csproj", "{D33DFCAA-2E66-4B1E-AD08-CD77D5C57AEB}"
-	ProjectSection(ProjectDependencies) = postProject
-		{809CABF6-A6ED-480C-BA59-2DB65096CA72} = {809CABF6-A6ED-480C-BA59-2DB65096CA72}
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertiesReader", "PropertiesReader\PropertiesReader.csproj", "{809CABF6-A6ED-480C-BA59-2DB65096CA72}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "configs.classes", "configs\configs.classes.csproj", "{21CB29A8-493F-42BE-852A-D19B10A8B82C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "configs.classes", "configs.classes\configs.classes.csproj", "{21CB29A8-493F-42BE-852A-D19B10A8B82C}"
 	ProjectSection(ProjectDependencies) = postProject
 		{76F1718A-4867-4BA1-881E-9491CC17281E} = {76F1718A-4867-4BA1-881E-9491CC17281E}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "configs.gui", "gui\configs.gui.csproj", "{F098DE32-8836-4407-AC41-C8C7998BD83C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "configs.gui", "configs.gui\configs.gui.csproj", "{F098DE32-8836-4407-AC41-C8C7998BD83C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hashing.classes", "..\..\hashing.cs\hashing.classes\hashing.classes.csproj", "{76F1718A-4867-4BA1-881E-9491CC17281E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hashing.classes", "..\hashing.cs\hashing.classes\hashing.classes.csproj", "{76F1718A-4867-4BA1-881E-9491CC17281E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +18,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D33DFCAA-2E66-4B1E-AD08-CD77D5C57AEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D33DFCAA-2E66-4B1E-AD08-CD77D5C57AEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D33DFCAA-2E66-4B1E-AD08-CD77D5C57AEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D33DFCAA-2E66-4B1E-AD08-CD77D5C57AEB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{809CABF6-A6ED-480C-BA59-2DB65096CA72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{809CABF6-A6ED-480C-BA59-2DB65096CA72}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{809CABF6-A6ED-480C-BA59-2DB65096CA72}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{809CABF6-A6ED-480C-BA59-2DB65096CA72}.Release|Any CPU.Build.0 = Release|Any CPU
 		{21CB29A8-493F-42BE-852A-D19B10A8B82C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{21CB29A8-493F-42BE-852A-D19B10A8B82C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21CB29A8-493F-42BE-852A-D19B10A8B82C}.Release|Any CPU.ActiveCfg = Release|Any CPU

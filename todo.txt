@@ -1,0 +1,3 @@
+For each open Windows, give a proper title.
+	eg. APIs
+encrypt values for reading, writing...
