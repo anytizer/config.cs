@@ -23,31 +23,31 @@ namespace gui.editors
 
         private void button1_Click(object sender, EventArgs e)
         {
-            structure_user m = new structure_user();
-            m.id.value = textBox1.Text;
-            m.username.value = textBox2.Text;
-            m.password.value = textBox3.Text;
+            structure_user s = new structure_user();
+            s.id.value = textBox1.Text;
+            s.username.value = textBox2.Text;
+            s.password.value = textBox3.Text;
 
-            rw_user mc = new rw_user(file);
-            mc.write(m);
+            rw_user rw = new rw_user(file);
+            rw.write(s);
 
             this.Dispose();
         }
 
         private void UserEditor_Load(object sender, EventArgs e)
         {
-            structure_user m = read();
-            textBox1.Text = m.id.value;
-            textBox2.Text = m.username.value;
-            textBox3.Text = m.password.value;
+            structure_user s = read();
+            textBox1.Text = s.id.value;
+            textBox2.Text = s.username.value;
+            textBox3.Text = s.password.value;
         }
 
         private structure_user read()
         {
-            rw_user mc = new rw_user(file);
-            structure_user m = mc.read();
+            rw_user rw = new rw_user(file);
+            structure_user s = rw.read();
 
-            return m;
+            return s;
         }
     }
 }

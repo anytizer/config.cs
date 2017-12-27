@@ -10,28 +10,28 @@ using System.Threading.Tasks;
 
 namespace configs.readerwriter
 {
-    public class rw_user : config_user
+    public class rw_software : config_software
     {
-        public rw_user(string file)
+        public rw_software(string file)
         {
             this.file = file;
         }
 
-        public override structure_user read()
+        public override structure_software read()
         {
             this.Touch(file);
 
             string json = File.ReadAllText(file);
-            structure_user s = JsonConvert.DeserializeObject<structure_user>(json);
+            structure_software s = JsonConvert.DeserializeObject<structure_software>(json);
             if(null == s)
             {
-                s = new structure_user();
+                s = new structure_software();
             }
 
             return s;
         }
 
-        public override bool write(structure_user s)
+        public override bool write(structure_software s)
         {
             string json = JsonConvert.SerializeObject(s);
             File.WriteAllText(file, json);

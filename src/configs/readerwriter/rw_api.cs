@@ -22,18 +22,18 @@ namespace configs.readerwriter
             this.Touch(file);
 
             string json = File.ReadAllText(file);
-            structure_api f = JsonConvert.DeserializeObject<structure_api>(json);
-            if(null == f)
+            structure_api s = JsonConvert.DeserializeObject<structure_api>(json);
+            if(null == s)
             {
-                f = new structure_api();
+                s = new structure_api();
             }
 
-            return f;
+            return s;
         }
 
-        public override bool write(structure_api f)
+        public override bool write(structure_api s)
         {
-            string json = JsonConvert.SerializeObject(f);
+            string json = JsonConvert.SerializeObject(s);
             File.WriteAllText(file, json);
             return true;
         }

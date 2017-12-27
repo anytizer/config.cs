@@ -22,18 +22,18 @@ namespace configs.readerwriter
             this.Touch(file);
 
             string json = File.ReadAllText(file);
-            structure_ftp f = JsonConvert.DeserializeObject<structure_ftp>(json);
-            if(null == f)
+            structure_ftp s = JsonConvert.DeserializeObject<structure_ftp>(json);
+            if(null == s)
             {
-                f = new structure_ftp();
+                s = new structure_ftp();
             }
 
-            return f;
+            return s;
         }
 
-        public override bool write(structure_ftp f)
+        public override bool write(structure_ftp s)
         {
-            string json = JsonConvert.SerializeObject(f);
+            string json = JsonConvert.SerializeObject(s);
             File.WriteAllText(file, json);
             return true;
         }

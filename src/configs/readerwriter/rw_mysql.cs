@@ -22,18 +22,18 @@ namespace configs.readerwriter
             this.Touch(file);
 
             string json = File.ReadAllText(file);
-            structure_mysql m = JsonConvert.DeserializeObject<structure_mysql>(json);
-            if(null == m)
+            structure_mysql s = JsonConvert.DeserializeObject<structure_mysql>(json);
+            if(null == s)
             {
-                m = new structure_mysql();
+                s = new structure_mysql();
             }
 
-            return m;
+            return s;
         }
 
-        public override bool write(structure_mysql m)
+        public override bool write(structure_mysql s)
         {
-            string json = JsonConvert.SerializeObject(m);
+            string json = JsonConvert.SerializeObject(s);
             File.WriteAllText(file, json);
             return true;
         }
