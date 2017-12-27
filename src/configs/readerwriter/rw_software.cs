@@ -21,7 +21,7 @@ namespace configs.readerwriter
         {
             this.Touch(file);
 
-            string json = File.ReadAllText(file);
+            string json = decrypt(File.ReadAllText(file));
             structure_software s = JsonConvert.DeserializeObject<structure_software>(json);
             if(null == s)
             {
@@ -34,7 +34,7 @@ namespace configs.readerwriter
         public override bool write(structure_software s)
         {
             string json = JsonConvert.SerializeObject(s);
-            File.WriteAllText(file, json);
+            File.WriteAllText(file, encrypt(json));
             return true;
         }
     }

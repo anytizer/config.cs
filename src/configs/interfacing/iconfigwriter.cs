@@ -21,5 +21,15 @@ namespace configs.interfacing
             s.Dispose();
             File.SetLastWriteTimeUtc(fileName, DateTime.UtcNow);
         }
+
+        public string encrypt(string s)
+        {
+            return s;
+        }
+
+        public string decrypt(string s)
+        {
+            return s;
+        }
     }
 }
