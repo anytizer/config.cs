@@ -1,4 +1,4 @@
-﻿namespace gui
+﻿namespace configs.gui
 {
     partial class Welcome
     {

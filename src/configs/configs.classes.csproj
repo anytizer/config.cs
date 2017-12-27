@@ -7,8 +7,8 @@
     <ProjectGuid>{21CB29A8-493F-42BE-852A-D19B10A8B82C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>configs</RootNamespace>
-    <AssemblyName>configs</AssemblyName>
+    <RootNamespace>configs.classes</RootNamespace>
+    <AssemblyName>configs.classes</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -65,6 +65,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\hashing.cs\hashing.classes\hashing.classes.csproj">
+      <Project>{76F1718A-4867-4BA1-881E-9491CC17281E}</Project>
+      <Name>hashing.classes</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

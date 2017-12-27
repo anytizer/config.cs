@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace configs.structures
+namespace configs.classes.structures
 {
     public class structure_api
     {

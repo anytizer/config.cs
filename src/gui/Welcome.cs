@@ -1,5 +1,5 @@
-﻿using configs;
-using gui.editors;
+﻿using configs.classes;
+using configs.gui.editors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace gui
+namespace configs.gui
 {
     public partial class Welcome : Form
     {

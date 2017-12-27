@@ -1,5 +1,5 @@
-﻿using configs.readerwriter;
-using configs.structures;
+﻿using configs.classes.readerwriter;
+using configs.classes.structures;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace gui.editors
+namespace configs.gui.editors
 {
     public partial class SoftwareEditor : Form
     {

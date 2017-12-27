@@ -1,5 +1,5 @@
-﻿using configs.interfacing;
-using configs.structures;
+﻿using configs.classes.interfacing;
+using configs.classes.structures;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace configs.readerwriter
+namespace configs.classes.readerwriter
 {
     public class rw_api : config_api
     {

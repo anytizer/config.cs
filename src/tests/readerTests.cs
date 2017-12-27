@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PropertiesReader;
 
-namespace PropertiesReader.Tests
+namespace configs.tests
 {
     [TestClass()]
     public class readerTests

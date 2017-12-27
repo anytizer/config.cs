@@ -1,5 +1,4 @@
-﻿using configs.readerwriter;
-using configs.structures;
+﻿using configs.classes.structures;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -7,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace configs.interfacing
+namespace configs.classes.interfacing
 {
     public abstract class config_software : iconfigwriter
     {

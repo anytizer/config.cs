@@ -1,4 +1,4 @@
-﻿namespace gui.editors
+﻿namespace configs.gui.editors
 {
     partial class FTPEditor
     {

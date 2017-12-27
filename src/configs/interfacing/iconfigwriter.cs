@@ -1,11 +1,13 @@
-﻿using System;
+﻿using hashing.classes;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace configs.interfacing
+namespace configs.classes.interfacing
 {
     // @see https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/generic-interfaces
 
@@ -13,6 +15,11 @@ namespace configs.interfacing
     {
         //public abstract T Parameters<T> { get; set; }
         public string file = "filename.settings";
+
+        /**
+         * Determine if the configuration file should be unreadable
+         */
+        private bool protection = true;
 
         public void Touch(string fileName)
         {
@@ -24,12 +31,30 @@ namespace configs.interfacing
 
         public string encrypt(string s)
         {
-            return s;
+            if(protection)
+            {
+                hasher h = new hasher();
+                string s_encrypted = h.base64_encode(s);
+                return s_encrypted;
+            }
+            else
+            {
+                return s;
+            }
         }
 
         public string decrypt(string s)
         {
-            return s;
+            if(protection)
+            {
+                hasher h = new hasher();
+                string s_decrypted = h.base64_decode(s);
+                return s_decrypted;
+            }
+            else
+            {
+                return s;
+            }            
         }
     }
 }
