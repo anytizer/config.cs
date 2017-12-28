@@ -3,7 +3,7 @@
 Read and Write various kinds of configuration files.
 
 
-Capabilities
+Current capabilities include:
 
  * MySQL Configurations
  * FTP
@@ -11,21 +11,23 @@ Capabilities
  * API Keys
  * Software ID
 
-Each kind of configuration has its own set of fields. For example, a MySQLL Database configuration has:
+Each kind of configuration has its own set of fields. Examples:
 
- * Host Name
- * Port Number
- * User Name
- * Password
- * Database Name
+| MySQL Database  | FTP Connection |
+| --------------- | -------------- |
+| Host Name       | Host           |
+| Port Number     | Port           |
+| User Name       | User Name      |
+| Password        | Password       |
+| Database Name   | Path           |
 
 Structures of configuration files may be different for different purposes.
 
 
 ## Encoding
 
-To prevent configurations beign edited manually, the files can be encoded with base64 like encoders.
-It is optional.
+To prevent configuration files being edited manually, you can encode them with base64 like encoders.
+It is an optional step. Do not encode/decode files in the Reader/Writer. [Example](configs.classes/readerwriter/rw_mysql.cs).
 
 
 ## Dependencies

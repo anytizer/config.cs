@@ -17,12 +17,14 @@ namespace configs.tests
             string port = "21";
             string username = "public";
             string password = "common";
+            string path = "/path";
 
             structure_ftp values = new structure_ftp();
             values.host.value = host;
             values.port.value = port;
             values.username.value = username;
             values.password.value = password;
+            values.path.value = path;
 
             rw_ftp rw = new rw_ftp(file);
             rw.write(values);
@@ -33,6 +35,7 @@ namespace configs.tests
             Assert.AreEqual(port, s.port.value);
             Assert.AreEqual(username, s.username.value);
             Assert.AreEqual(password, s.password.value);
+            Assert.AreEqual(path, s.path.value);
         }
     }
 }

@@ -28,6 +28,7 @@ namespace configs.gui.editors
             textBox2.Text = s.username.value;
             textBox3.Text = s.password.value;
             textBox4.Text = s.port.value;
+            textBox5.Text = s.path.value;
         }
 
         private structure_ftp read()
@@ -45,6 +46,7 @@ namespace configs.gui.editors
             s.username.value = textBox2.Text;
             s.password.value = textBox3.Text;
             s.port.value = textBox4.Text;
+            s.path.value = textBox5.Text;
 
             rw_ftp rw = new rw_ftp(file);
             rw.write(s);

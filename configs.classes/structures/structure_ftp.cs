@@ -12,6 +12,7 @@ namespace configs.classes.structures
         public structure port;
         public structure username;
         public structure password;
+        public structure path;
 
         public structure_ftp()
         {
@@ -40,6 +41,13 @@ namespace configs.classes.structures
                 id = new Guid("20EAB695-7A6D-48A4-B4D2-4CD0B6293659"),
                 name = "password",
                 value = "common",
+            };
+
+            path = new structure()
+            {
+                id = new Guid("8BA5EE3E-839F-4708-9D13-8E25C17033C8"),
+                name = "path",
+                value = "/",
             };
         }
     }
