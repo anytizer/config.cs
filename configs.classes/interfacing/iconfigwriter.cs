@@ -21,11 +21,15 @@ namespace configs.classes.interfacing
          */
         private bool protection = true;
 
+        /**
+         * Makes sure that at least a blank file exists.
+         * @see http://man7.org/linux/man-pages/man1/touch.1.html
+         */
         public void Touch(string fileName)
         {
             FileStream s = File.Open(fileName, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite);
             s.Close();
-            s.Dispose();
+            //s.Dispose();
             File.SetLastWriteTimeUtc(fileName, DateTime.UtcNow);
         }
 

@@ -18,7 +18,7 @@ namespace configs.classes.structures
             {
                 id = new Guid("C3FF708E-47DA-4ED3-A5A6-4CA8F1DE340B"),
                 name = "id",
-                value = "id",
+                value = "0D0C918D-75DC-43FE-B2CD-FB421A8739FD",
             };
 
             username = new structure()

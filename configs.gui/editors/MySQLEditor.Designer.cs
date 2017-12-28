@@ -43,7 +43,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(169, 141);
+            this.button1.Location = new System.Drawing.Point(142, 142);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -53,7 +53,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(104, 12);
+            this.textBox1.Location = new System.Drawing.Point(77, 13);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(140, 20);
             this.textBox1.TabIndex = 1;
@@ -69,7 +69,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(104, 38);
+            this.textBox2.Location = new System.Drawing.Point(77, 39);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(140, 20);
             this.textBox2.TabIndex = 1;
@@ -85,7 +85,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(104, 64);
+            this.textBox3.Location = new System.Drawing.Point(77, 65);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(140, 20);
             this.textBox3.TabIndex = 1;
@@ -101,7 +101,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(104, 90);
+            this.textBox4.Location = new System.Drawing.Point(77, 91);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(140, 20);
             this.textBox4.TabIndex = 1;
@@ -117,7 +117,7 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(104, 116);
+            this.textBox5.Location = new System.Drawing.Point(77, 117);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(140, 20);
             this.textBox5.TabIndex = 1;
@@ -131,11 +131,11 @@
             this.label5.TabIndex = 2;
             this.label5.Text = "Database";
             // 
-            // Form1
+            // MySQLEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(251, 169);
+            this.ClientSize = new System.Drawing.Size(225, 169);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -147,7 +147,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
-            this.Name = "Form1";
+            this.Name = "MySQLEditor";
             this.Text = "MySQL Settings";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

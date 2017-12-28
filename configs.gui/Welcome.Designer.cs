@@ -42,9 +42,9 @@
             this.aPIsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.dropboxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.twitterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.facebookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.facebookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,7 +58,7 @@
             this.aPIsToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(652, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(426, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -155,16 +155,23 @@
             // dropboxToolStripMenuItem
             // 
             this.dropboxToolStripMenuItem.Name = "dropboxToolStripMenuItem";
-            this.dropboxToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.dropboxToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.dropboxToolStripMenuItem.Text = "Dropbox";
             this.dropboxToolStripMenuItem.Click += new System.EventHandler(this.dropboxToolStripMenuItem_Click);
             // 
             // twitterToolStripMenuItem
             // 
             this.twitterToolStripMenuItem.Name = "twitterToolStripMenuItem";
-            this.twitterToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.twitterToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.twitterToolStripMenuItem.Text = "Twitter";
             this.twitterToolStripMenuItem.Click += new System.EventHandler(this.twitterToolStripMenuItem_Click);
+            // 
+            // facebookToolStripMenuItem
+            // 
+            this.facebookToolStripMenuItem.Name = "facebookToolStripMenuItem";
+            this.facebookToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.facebookToolStripMenuItem.Text = "Facebook";
+            this.facebookToolStripMenuItem.Click += new System.EventHandler(this.facebookToolStripMenuItem_Click);
             // 
             // textBox1
             // 
@@ -182,24 +189,21 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Writing To";
             // 
-            // facebookToolStripMenuItem
-            // 
-            this.facebookToolStripMenuItem.Name = "facebookToolStripMenuItem";
-            this.facebookToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.facebookToolStripMenuItem.Text = "Facebook";
-            this.facebookToolStripMenuItem.Click += new System.EventHandler(this.facebookToolStripMenuItem_Click);
-            // 
             // Welcome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(652, 327);
+            this.ClientSize = new System.Drawing.Size(426, 210);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Welcome";
-            this.Text = "Welcome";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Configurations Editor";
             this.Load += new System.EventHandler(this.Welcome_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

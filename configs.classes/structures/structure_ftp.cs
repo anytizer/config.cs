@@ -18,7 +18,7 @@ namespace configs.classes.structures
             host = new structure() {
                 id = new Guid("450D1841-70F6-4982-A33B-4FB4B6AD5C98"),
                 name = "host",
-                value = "localhost",
+                value = "127.0.0.1",
             };
 
             port = new structure()
@@ -32,14 +32,14 @@ namespace configs.classes.structures
             {
                 id = new Guid("C2C5F7F5-FC81-4F8C-8FF1-2BA4C5803D45"),
                 name = "username",
-                value = "root",
+                value = "public",
             };
 
             password = new structure()
             {
                 id = new Guid("20EAB695-7A6D-48A4-B4D2-4CD0B6293659"),
                 name = "password",
-                value = "password",
+                value = "common",
             };
         }
     }
