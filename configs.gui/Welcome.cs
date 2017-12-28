@@ -66,16 +66,6 @@ namespace configs.gui
             
         }
 
-        private void dropboxToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            set(new APIEditor(names.API_ONE));
-        }
-
-        private void twitterToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            set(new APIEditor(names.API_TWO));
-        }
-
         private void serverOneToolStripMenuItem_Click(object sender, EventArgs e)
         {
             set(new MySQLEditor(names.MYSQL_ONE));
@@ -109,6 +99,30 @@ namespace configs.gui
         private void aPIsToolStripMenuItem1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dropboxToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            APIEditor f = new APIEditor(names.API_ONE);
+            f.Text = "Dropbox API Editor";
+
+            set(f);
+        }
+
+        private void twitterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            APIEditor f = new APIEditor(names.API_TWO);
+            f.Text = "Twitter API Editor";
+
+            set(f);
+        }
+
+        private void facebookToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            APIEditor f = new APIEditor(names.API_THREE);
+            f.Text = "Facebook API Editor";
+
+            set(f);
         }
     }
 }

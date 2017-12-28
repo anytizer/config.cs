@@ -14,7 +14,8 @@ namespace configs.classes.structures
 
         public structure_user()
         {
-            id = new structure() {
+            id = new structure()
+            {
                 id = new Guid("C3FF708E-47DA-4ED3-A5A6-4CA8F1DE340B"),
                 name = "id",
                 value = "id",

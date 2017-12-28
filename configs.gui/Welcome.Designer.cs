@@ -44,6 +44,7 @@
             this.twitterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.facebookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -129,14 +130,14 @@
             // userOneToolStripMenuItem
             // 
             this.userOneToolStripMenuItem.Name = "userOneToolStripMenuItem";
-            this.userOneToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.userOneToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.userOneToolStripMenuItem.Text = "User One";
             this.userOneToolStripMenuItem.Click += new System.EventHandler(this.userOneToolStripMenuItem_Click);
             // 
             // userTwoToolStripMenuItem
             // 
             this.userTwoToolStripMenuItem.Name = "userTwoToolStripMenuItem";
-            this.userTwoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.userTwoToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.userTwoToolStripMenuItem.Text = "User Two";
             this.userTwoToolStripMenuItem.Click += new System.EventHandler(this.userTwoToolStripMenuItem_Click);
             // 
@@ -144,7 +145,8 @@
             // 
             this.aPIsToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dropboxToolStripMenuItem,
-            this.twitterToolStripMenuItem});
+            this.twitterToolStripMenuItem,
+            this.facebookToolStripMenuItem});
             this.aPIsToolStripMenuItem1.Name = "aPIsToolStripMenuItem1";
             this.aPIsToolStripMenuItem1.Size = new System.Drawing.Size(42, 20);
             this.aPIsToolStripMenuItem1.Text = "APIs";
@@ -176,9 +178,16 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(18, 57);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 13);
+            this.label1.Size = new System.Drawing.Size(56, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Location";
+            this.label1.Text = "Writing To";
+            // 
+            // facebookToolStripMenuItem
+            // 
+            this.facebookToolStripMenuItem.Name = "facebookToolStripMenuItem";
+            this.facebookToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.facebookToolStripMenuItem.Text = "Facebook";
+            this.facebookToolStripMenuItem.Click += new System.EventHandler(this.facebookToolStripMenuItem_Click);
             // 
             // Welcome
             // 
@@ -217,5 +226,6 @@
         private System.Windows.Forms.ToolStripMenuItem userTwoToolStripMenuItem;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripMenuItem facebookToolStripMenuItem;
     }
 }

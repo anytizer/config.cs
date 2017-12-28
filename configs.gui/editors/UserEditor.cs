@@ -21,19 +21,6 @@ namespace configs.gui.editors
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            structure_user s = new structure_user();
-            s.id.value = textBox1.Text;
-            s.username.value = textBox2.Text;
-            s.password.value = textBox3.Text;
-
-            rw_user rw = new rw_user(file);
-            rw.write(s);
-
-            this.Dispose();
-        }
-
         private void UserEditor_Load(object sender, EventArgs e)
         {
             structure_user s = read();
@@ -48,6 +35,19 @@ namespace configs.gui.editors
             structure_user s = rw.read();
 
             return s;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            structure_user s = new structure_user();
+            s.id.value = textBox1.Text;
+            s.username.value = textBox2.Text;
+            s.password.value = textBox3.Text;
+
+            rw_user rw = new rw_user(file);
+            rw.write(s);
+
+            this.Dispose();
         }
     }
 }
