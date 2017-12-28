@@ -19,7 +19,6 @@ namespace configs.tests
 
             structure_user values = new structure_user();
 
-            values.id.value = id_generated.ToString();
             values.username.value = username_value;
             values.password.value = password_value;
 
@@ -28,7 +27,6 @@ namespace configs.tests
 
             structure_user s = rw.read();
 
-            Assert.AreEqual(id_generated.ToString(), s.id.value);
             Assert.AreEqual(username_value, s.username.value);
             Assert.AreEqual(password_value, s.password.value);
         }

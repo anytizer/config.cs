@@ -8,19 +8,11 @@ namespace configs.classes.structures
 {
     public class structure_user
     {
-        public structure id;
         public structure username;
         public structure password;
 
         public structure_user()
         {
-            id = new structure()
-            {
-                id = new Guid("C3FF708E-47DA-4ED3-A5A6-4CA8F1DE340B"),
-                name = "id",
-                value = "0D0C918D-75DC-43FE-B2CD-FB421A8739FD",
-            };
-
             username = new structure()
             {
                 id = new Guid("4BAD7647-9E9B-4D13-B2D2-9186FACE12E2"),

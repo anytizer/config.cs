@@ -24,7 +24,6 @@ namespace configs.gui.editors
         private void UserEditor_Load(object sender, EventArgs e)
         {
             structure_user s = read();
-            textBox1.Text = s.id.value;
             textBox2.Text = s.username.value;
             textBox3.Text = s.password.value;
         }
@@ -40,7 +39,6 @@ namespace configs.gui.editors
         private void button1_Click(object sender, EventArgs e)
         {
             structure_user s = new structure_user();
-            s.id.value = textBox1.Text;
             s.username.value = textBox2.Text;
             s.password.value = textBox3.Text;
 

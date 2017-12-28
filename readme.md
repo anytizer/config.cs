@@ -13,13 +13,13 @@ Current capabilities include:
 
 Each kind of configuration has its own set of fields. Examples:
 
-| MySQL Database  | FTP Connection |
-| --------------- | -------------- |
-| Host Name       | Host           |
-| Port Number     | Port           |
-| User Name       | User Name      |
-| Password        | Password       |
-| Database Name   | Path           |
+| MySQL Database  | FTP Connection | User       |
+| --------------- | -------------- | ---------- |
+| Host Name       | Host           | User Name  |
+| Port Number     | Port           | Password   |
+| User Name       | User Name      |            |
+| Password        | Password       |            |
+| Database Name   | Path           |            |
 
 Structures of configuration files may be different for different purposes.
 
