@@ -1,11 +1,11 @@
 # configs.cs
 
-Read and Write various kinds of configuration files.
+Read and write various kinds of configuration files using C#.
 
 
 Current capabilities include:
 
-| MySQL Database  | FTP Connection | User       | API Keys        | Software ID |
+| MySQL Database  | FTP Connection | User Login | API Keys        | Software ID |
 | --------------- | -------------- | ---------- | --------------- |------------ |
 | Host Name       | Host           | User Name  | Consumer Key    | ID          |
 | Port Number     | Port           | Password   | Consumer Secret | Notes       |
@@ -14,6 +14,7 @@ Current capabilities include:
 | Database Name   | Path           |            |                 |             |
 
 Each kind of configuration has its own set of fields.
+And are saved to corresponding .settings files.
 
 
 ## Encoding
