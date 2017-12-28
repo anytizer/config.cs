@@ -5,14 +5,6 @@ Read and Write various kinds of configuration files.
 
 Current capabilities include:
 
- * MySQL Configurations
- * FTP
- * User
- * API Keys
- * Software ID
-
-Each kind of configuration has its own set of fields. Examples:
-
 | MySQL Database  | FTP Connection | User       | API Keys        | Software ID |
 | --------------- | -------------- | ---------- | --------------- |------------ |
 | Host Name       | Host           | User Name  | Consumer Key    | ID          |
@@ -21,13 +13,13 @@ Each kind of configuration has its own set of fields. Examples:
 | Password        | Password       |            |                 |             |
 | Database Name   | Path           |            |                 |             |
 
-Structures of configuration files may be different for different purposes.
+Each kind of configuration has its own set of fields.
 
 
 ## Encoding
 
-To prevent configuration files being edited manually, you can encode them with base64 like encoders.
-It is an optional step. Do not encode/decode files in the Reader/Writer. [See an example](configs.classes/readerwriter/rw_mysql.cs).
+To prevent configuration files being edited manually, you can encode them with __base64__ like encoders.
+It is an optional step. Do not encode/decode files in the Reader/Writer. [See an example](configs.classes/interfacing/iconfigwriter.cs).
 
 
 ## Dependencies

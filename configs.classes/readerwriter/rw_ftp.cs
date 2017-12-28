@@ -1,12 +1,7 @@
 ﻿using configs.classes.interfacing;
 using configs.classes.structures;
 using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace configs.classes.readerwriter
 {
@@ -14,16 +9,18 @@ namespace configs.classes.readerwriter
     {
         public rw_ftp(string file)
         {
-            this.file = file;
+            this.filename = file;
         }
 
         public override structure_ftp read()
         {
-            this.Touch(file);
+            this.Touch(filename);
 
-            string json = decrypt(File.ReadAllText(file));
+            string json = File.ReadAllText(filename);
+            json = decrypt(json);
+
             structure_ftp s = JsonConvert.DeserializeObject<structure_ftp>(json);
-            if(null == s)
+            if (null == s)
             {
                 s = new structure_ftp();
             }
@@ -34,7 +31,9 @@ namespace configs.classes.readerwriter
         public override bool write(structure_ftp s)
         {
             string json = JsonConvert.SerializeObject(s);
-            File.WriteAllText(file, encrypt(json));
+            json = encrypt(json);
+
+            File.WriteAllText(filename, json);
             return true;
         }
     }

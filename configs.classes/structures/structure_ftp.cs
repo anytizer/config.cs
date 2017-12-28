@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace configs.classes.structures
 {
@@ -16,7 +12,8 @@ namespace configs.classes.structures
 
         public structure_ftp()
         {
-            host = new structure() {
+            host = new structure()
+            {
                 id = new Guid("450D1841-70F6-4982-A33B-4FB4B6AD5C98"),
                 name = "host",
                 value = "127.0.0.1",

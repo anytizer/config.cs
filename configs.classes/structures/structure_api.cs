@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace configs.classes.structures
 {
@@ -13,7 +9,8 @@ namespace configs.classes.structures
 
         public structure_api()
         {
-            key = new structure() {
+            key = new structure()
+            {
                 id = new Guid("0AA0C665-C07E-458E-9A4F-DD638E7578B1"),
                 name = "key",
                 value = "927B71A8-68DA-474F-B9AB-A9852DF14AAB",

@@ -1,7 +1,6 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using configs.classes.readerwriter;
+﻿using configs.classes.readerwriter;
 using configs.classes.structures;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace configs.tests
 {

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace configs.classes.structures
 {
@@ -13,7 +9,8 @@ namespace configs.classes.structures
 
         public structure_software()
         {
-            id = new structure() {
+            id = new structure()
+            {
                 id = new Guid("2527E307-FA43-4811-B220-D79B04859AF9"),
                 name = "id",
                 value = "08B0F230-6501-4009-8F4D-DE5FBAAF2FB3",

@@ -1,11 +1,6 @@
 ﻿using hashing.classes;
-using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace configs.classes.interfacing
 {
@@ -13,13 +8,13 @@ namespace configs.classes.interfacing
 
     public abstract class iconfigwriter
     {
-        //public abstract T Parameters<T> { get; set; }
-        public string file = "filename.settings";
-
         /**
+         * Determines if the output files should be encoded.
          * Determine if the configuration file should be unreadable
          */
-        private bool protection = true;
+        private bool encode_output = true;
+
+        public string filename = "filename.settings";
 
         /**
          * Makes sure that at least a blank file exists.
@@ -35,7 +30,7 @@ namespace configs.classes.interfacing
 
         public string encrypt(string s)
         {
-            if(protection)
+            if (encode_output)
             {
                 hasher h = new hasher();
                 string s_encrypted = h.base64_encode(s);
@@ -49,7 +44,7 @@ namespace configs.classes.interfacing
 
         public string decrypt(string s)
         {
-            if(protection)
+            if (encode_output)
             {
                 hasher h = new hasher();
                 string s_decrypted = h.base64_decode(s);
@@ -58,7 +53,7 @@ namespace configs.classes.interfacing
             else
             {
                 return s;
-            }            
+            }
         }
     }
 }

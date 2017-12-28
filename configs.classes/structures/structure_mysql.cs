@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace configs.classes.structures
 {
@@ -16,7 +12,8 @@ namespace configs.classes.structures
 
         public structure_mysql()
         {
-            host = new structure() {
+            host = new structure()
+            {
                 id = new Guid("9474AB3B-717B-46CC-9915-C843DA66DDC5"),
                 name = "host",
                 value = "localhost",

@@ -1,14 +1,8 @@
 ﻿using configs.classes;
 using configs.gui.editors;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace configs.gui
@@ -25,12 +19,12 @@ namespace configs.gui
 
         private void mySQLToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void fTPToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void set(Form f)
@@ -53,7 +47,7 @@ namespace configs.gui
 
         private void aPIsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void softwareIDToolStripMenuItem_Click(object sender, EventArgs e)
@@ -63,7 +57,7 @@ namespace configs.gui
 
         private void userToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void serverOneToolStripMenuItem_Click(object sender, EventArgs e)
