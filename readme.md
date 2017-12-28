@@ -13,13 +13,13 @@ Current capabilities include:
 
 Each kind of configuration has its own set of fields. Examples:
 
-| MySQL Database  | FTP Connection | User       |
-| --------------- | -------------- | ---------- |
-| Host Name       | Host           | User Name  |
-| Port Number     | Port           | Password   |
-| User Name       | User Name      |            |
-| Password        | Password       |            |
-| Database Name   | Path           |            |
+| MySQL Database  | FTP Connection | User       | API Keys        | Software ID |
+| --------------- | -------------- | ---------- | --------------- |------------ |
+| Host Name       | Host           | User Name  | Consumer Key    | ID          |
+| Port Number     | Port           | Password   | Consumer Secret | Notes       |
+| User Name       | User Name      |            |                 |             |
+| Password        | Password       |            |                 |             |
+| Database Name   | Path           |            |                 |             |
 
 Structures of configuration files may be different for different purposes.
 
@@ -27,7 +27,7 @@ Structures of configuration files may be different for different purposes.
 ## Encoding
 
 To prevent configuration files being edited manually, you can encode them with base64 like encoders.
-It is an optional step. Do not encode/decode files in the Reader/Writer. [Example](configs.classes/readerwriter/rw_mysql.cs).
+It is an optional step. Do not encode/decode files in the Reader/Writer. [See an example](configs.classes/readerwriter/rw_mysql.cs).
 
 
 ## Dependencies
