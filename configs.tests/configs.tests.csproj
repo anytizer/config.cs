@@ -52,6 +52,7 @@
     <Compile Include="FTPTester.cs" />
     <Compile Include="MySQLTester.cs" />
     <Compile Include="SoftwareTester.cs" />
+    <Compile Include="SMTPTester.cs" />
     <Compile Include="UserTester.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

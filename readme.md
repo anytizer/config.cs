@@ -14,7 +14,7 @@ Current capabilities include:
 | Database Name   | Path           |            |                 |             |
 
 Each kind of configuration has its own set of fields.
-And are saved to corresponding .settings files.
+And they are saved to their corresponding .settings files.
 
 
 ## Encoding
