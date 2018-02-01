@@ -46,7 +46,7 @@
             this.button1.Location = new System.Drawing.Point(142, 142);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
+            this.button1.TabIndex = 6;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -72,7 +72,7 @@
             this.textBox2.Location = new System.Drawing.Point(77, 39);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(140, 20);
-            this.textBox2.TabIndex = 1;
+            this.textBox2.TabIndex = 2;
             // 
             // label2
             // 
@@ -88,7 +88,7 @@
             this.textBox3.Location = new System.Drawing.Point(77, 65);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(140, 20);
-            this.textBox3.TabIndex = 1;
+            this.textBox3.TabIndex = 3;
             // 
             // label3
             // 
@@ -104,7 +104,7 @@
             this.textBox4.Location = new System.Drawing.Point(77, 91);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(140, 20);
-            this.textBox4.TabIndex = 1;
+            this.textBox4.TabIndex = 4;
             // 
             // label4
             // 
@@ -120,7 +120,7 @@
             this.textBox5.Location = new System.Drawing.Point(77, 117);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(140, 20);
-            this.textBox5.TabIndex = 1;
+            this.textBox5.TabIndex = 5;
             // 
             // label5
             // 

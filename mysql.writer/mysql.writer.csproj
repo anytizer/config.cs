@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F098DE32-8836-4407-AC41-C8C7998BD83C}</ProjectGuid>
+    <ProjectGuid>{DB538BE4-4439-4D25-9C98-ECC260A25633}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>configs.gui</RootNamespace>
-    <AssemblyName>configs.gui</AssemblyName>
+    <RootNamespace>mysql.writer</RootNamespace>
+    <AssemblyName>MySQL Writer</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
-    <Install>false</Install>
+    <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
@@ -22,8 +21,9 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -37,7 +37,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -49,37 +49,23 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>
-    </StartupObject>
+    <StartupObject>mysql.writer.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>28321F71C3FF165FA5FDB436E95DC2B959C33CF8</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>9738CFC66C55038AD06B246C679BB528AD404A0F</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>gui_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>mysql.writer_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <GenerateManifests>false</GenerateManifests>
+    <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>false</SignManifests>
-  </PropertyGroup>
-  <PropertyGroup>
-    <SignAssembly>false</SignAssembly>
-  </PropertyGroup>
-  <PropertyGroup>
-    <TargetZone>LocalIntranet</TargetZone>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.11.0.1-beta1\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -91,58 +77,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="editors\APIEditor.cs">
+    <Compile Include="MySQLWriter.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="editors\APIEditor.Designer.cs">
-      <DependentUpon>APIEditor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="editors\FTPEditor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="editors\FTPEditor.Designer.cs">
-      <DependentUpon>FTPEditor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="editors\MySQLEditor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="editors\MySQLEditor.Designer.cs">
-      <DependentUpon>MySQLEditor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="editors\SoftwareEditor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="editors\SoftwareEditor.Designer.cs">
-      <DependentUpon>SoftwareEditor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="editors\UserEditor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="editors\UserEditor.Designer.cs">
-      <DependentUpon>UserEditor.cs</DependentUpon>
+    <Compile Include="MySQLWriter.Designer.cs">
+      <DependentUpon>MySQLWriter.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Welcome.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Welcome.Designer.cs">
-      <DependentUpon>Welcome.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="editors\APIEditor.resx">
-      <DependentUpon>APIEditor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="editors\FTPEditor.resx">
-      <DependentUpon>FTPEditor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="editors\MySQLEditor.resx">
-      <DependentUpon>MySQLEditor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="editors\SoftwareEditor.resx">
-      <DependentUpon>SoftwareEditor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="editors\UserEditor.resx">
-      <DependentUpon>UserEditor.cs</DependentUpon>
+    <EmbeddedResource Include="MySQLWriter.resx">
+      <DependentUpon>MySQLWriter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -152,13 +96,8 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Welcome.resx">
-      <DependentUpon>Welcome.cs</DependentUpon>
-    </EmbeddedResource>
-    <None Include="packages.config" />
-    <None Include="Properties\app.manifest" />
+    <None Include="mysql.writer_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -179,6 +118,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
       <Visible>False</Visible>
       <ProductName>.NET Framework 3.5 SP1</ProductName>
