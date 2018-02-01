@@ -11,7 +11,7 @@ namespace configs.tests
         [TestMethod]
         public void SoftwareTests()
         {
-            string file = "tests.settings";
+            string filename = "software-test.settings";
 
             Guid id_generated = Guid.NewGuid();
             string notes_value = "my software notes";
@@ -20,7 +20,7 @@ namespace configs.tests
             values.id.value = id_generated.ToString();
             values.notes.value = notes_value;
 
-            rw_software rw = new rw_software(file);
+            rw_software rw = new rw_software(filename);
             rw.write(values);
 
             structure_software s = rw.read();

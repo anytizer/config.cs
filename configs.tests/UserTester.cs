@@ -11,7 +11,7 @@ namespace configs.tests
         [TestMethod]
         public void UserTests()
         {
-            string file = "tests.settings";
+            string filename = "user-test.settings";
 
             Guid id_generated = Guid.NewGuid();
             string username_value = "uname";
@@ -22,7 +22,7 @@ namespace configs.tests
             values.username.value = username_value;
             values.password.value = password_value;
 
-            rw_user rw = new rw_user(file);
+            rw_user rw = new rw_user(filename);
             rw.write(values);
 
             structure_user s = rw.read();

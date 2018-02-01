@@ -10,7 +10,7 @@ namespace configs.tests
         [TestMethod]
         public void APITests()
         {
-            string file = "tests.settings";
+            string filename = "api-test.settings";
 
             string key = "2AB61B4B-9A1B-4C94-99E4-84EF00E65E8E";
             string secret = "035D8CD7-59EC-431E-B700-57DAE2E9B12F";
@@ -19,7 +19,7 @@ namespace configs.tests
             values.key.value = key;
             values.secret.value = secret;
 
-            rw_api rw = new rw_api(file);
+            rw_api rw = new rw_api(filename);
             rw.write(values);
 
             structure_api s = rw.read();

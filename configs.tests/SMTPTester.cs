@@ -11,7 +11,7 @@ namespace configs.tests
         [TestMethod]
         public void SMTPTests()
         {
-            string file = "smtp.settings";
+            string filename = "smtp-test.settings";
 
             string username_value = "uname";
             string password_value = "P002";
@@ -28,7 +28,7 @@ namespace configs.tests
             values.FromEmail.value = FromEmail;
             values.FromName.value = FromName;
 
-            rw_smtp rw = new rw_smtp(file);
+            rw_smtp rw = new rw_smtp(filename);
             rw.write(values);
 
             structure_smtp s = rw.read();

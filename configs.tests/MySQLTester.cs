@@ -10,7 +10,7 @@ namespace configs.tests
         [TestMethod]
         public void MySQLTests()
         {
-            string file = "tests.settings";
+            string filename = "mysql-test.settings";
 
             string host = "localhost";
             string port = "3306";
@@ -25,7 +25,7 @@ namespace configs.tests
             values.password.value = password;
             values.database.value = database;
 
-            rw_mysql rw = new rw_mysql(file);
+            rw_mysql rw = new rw_mysql(filename);
             rw.write(values);
 
             structure_mysql s = rw.read();

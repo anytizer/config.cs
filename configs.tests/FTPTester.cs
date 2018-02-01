@@ -10,7 +10,7 @@ namespace configs.tests
         [TestMethod]
         public void FTPTests()
         {
-            string file = "tests.settings";
+            string filename = "ftp-test.settings";
 
             string host = "127.0.0.1";
             string port = "21";
@@ -25,7 +25,7 @@ namespace configs.tests
             values.password.value = password;
             values.path.value = path;
 
-            rw_ftp rw = new rw_ftp(file);
+            rw_ftp rw = new rw_ftp(filename);
             rw.write(values);
 
             structure_ftp s = rw.read();
