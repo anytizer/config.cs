@@ -19,22 +19,22 @@ namespace configs.tests
             string path = "/path";
 
             structure_ftp values = new structure_ftp();
-            values.host.value = host;
-            values.port.value = port;
-            values.username.value = username;
-            values.password.value = password;
-            values.path.value = path;
+            values.host = host;
+            values.port = port;
+            values.username = username;
+            values.password = password;
+            values.path = path;
 
             rw_ftp rw = new rw_ftp(filename);
             rw.write(values);
 
             structure_ftp s = rw.read();
 
-            Assert.AreEqual(host, s.host.value);
-            Assert.AreEqual(port, s.port.value);
-            Assert.AreEqual(username, s.username.value);
-            Assert.AreEqual(password, s.password.value);
-            Assert.AreEqual(path, s.path.value);
+            Assert.AreEqual(host, s.host);
+            Assert.AreEqual(port, s.port);
+            Assert.AreEqual(username, s.username);
+            Assert.AreEqual(password, s.password);
+            Assert.AreEqual(path, s.path);
         }
     }
 }

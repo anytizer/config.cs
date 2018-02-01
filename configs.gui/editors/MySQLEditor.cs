@@ -18,11 +18,11 @@ namespace configs.gui.editors
         private void Form1_Load(object sender, EventArgs e)
         {
             structure_mysql s = read();
-            textBox1.Text = s.host.value;
-            textBox2.Text = s.username.value;
-            textBox3.Text = s.password.value;
-            textBox4.Text = s.port.value;
-            textBox5.Text = s.database.value;
+            textBox1.Text = s.host;
+            textBox2.Text = s.username;
+            textBox3.Text = s.password;
+            textBox4.Text = s.port;
+            textBox5.Text = s.database;
         }
 
         private structure_mysql read()
@@ -36,11 +36,11 @@ namespace configs.gui.editors
         private void button1_Click(object sender, EventArgs e)
         {
             structure_mysql s = new structure_mysql();
-            s.host.value = textBox1.Text;
-            s.username.value = textBox2.Text;
-            s.password.value = textBox3.Text;
-            s.port.value = textBox4.Text;
-            s.database.value = textBox5.Text;
+            s.host = textBox1.Text;
+            s.username = textBox2.Text;
+            s.password = textBox3.Text;
+            s.port = textBox4.Text;
+            s.database = textBox5.Text;
 
             rw_mysql rw = new rw_mysql(filename);
             rw.write(s);

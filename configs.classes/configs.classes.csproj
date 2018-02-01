@@ -71,10 +71,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\anytizer.net\anytizer.classes\anytizer.classes.csproj">
-      <Project>{8A88E3B5-DBCA-4900-B75D-76EBF5F3FDD0}</Project>
-      <Name>anytizer.classes</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\hashing.cs\src\hashing.classes\hashing.classes.csproj">
       <Project>{76F1718A-4867-4BA1-881E-9491CC17281E}</Project>
       <Name>hashing.classes</Name>

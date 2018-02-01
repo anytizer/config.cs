@@ -17,8 +17,8 @@ namespace configs.gui.editors
         private void APIEditor_Load(object sender, EventArgs e)
         {
             structure_api s = read();
-            textBox1.Text = s.key.value;
-            textBox2.Text = s.secret.value;
+            textBox1.Text = s.key;
+            textBox2.Text = s.secret;
         }
 
         private structure_api read()
@@ -32,8 +32,8 @@ namespace configs.gui.editors
         private void button1_Click(object sender, EventArgs e)
         {
             structure_api s = new structure_api();
-            s.key.value = textBox1.Text;
-            s.secret.value = textBox2.Text;
+            s.key = textBox1.Text;
+            s.secret = textBox2.Text;
 
             rw_api rw = new rw_api(filename);
             rw.write(s);

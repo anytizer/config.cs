@@ -16,16 +16,16 @@ namespace configs.tests
             string secret = "035D8CD7-59EC-431E-B700-57DAE2E9B12F";
 
             structure_api values = new structure_api();
-            values.key.value = key;
-            values.secret.value = secret;
+            values.key = key;
+            values.secret = secret;
 
             rw_api rw = new rw_api(filename);
             rw.write(values);
 
             structure_api s = rw.read();
 
-            Assert.AreEqual(key, s.key.value);
-            Assert.AreEqual(secret, s.secret.value);
+            Assert.AreEqual(key, s.key);
+            Assert.AreEqual(secret, s.secret);
         }
     }
 }

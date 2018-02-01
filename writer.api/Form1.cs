@@ -34,8 +34,8 @@ namespace writer.api
         private void write()
         {
             structure_api s = new structure_api();
-            s.key.value = textBox1.Text;
-            s.secret.value = textBox2.Text;
+            s.key = textBox1.Text;
+            s.secret = textBox2.Text;
 
             rw_api rw = new rw_api(filename);
             rw.write(s);
@@ -53,8 +53,8 @@ namespace writer.api
                 rw_api rw = new rw_api(filename);
                 structure_api s = rw.read();
 
-                textBox1.Text = s.key.value;
-                textBox2.Text = s.secret.value;
+                textBox1.Text = s.key;
+                textBox2.Text = s.secret;
             }
         }
     }

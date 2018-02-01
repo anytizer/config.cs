@@ -4,19 +4,22 @@ namespace configs.classes.structures
 {
     public class structure_api
     {
-        public structure key;
-        public structure secret;
+        private structure _key;
+        private structure _secret;
+
+        public string key { get { return _key.value; } set { _key.value = value; } }
+        public string secret { get { return _secret.value; } set { _secret.value = value; } }
 
         public structure_api()
         {
-            key = new structure()
+            _key = new structure()
             {
                 id = new Guid("0AA0C665-C07E-458E-9A4F-DD638E7578B1"),
                 name = "key",
                 value = "927B71A8-68DA-474F-B9AB-A9852DF14AAB",
             };
 
-            secret = new structure()
+            _secret = new structure()
             {
                 id = new Guid("C2E3483D-C14C-46A7-ABC3-DF65DE698384"),
                 name = "secret",

@@ -21,24 +21,24 @@ namespace configs.tests
             string FromName = "sender@example.com";
 
             structure_smtp values = new structure_smtp();
-            values.username.value = username_value;
-            values.password.value = password_value;
-            values.server.value = server_name;
-            values.port.value = port_number;
-            values.FromEmail.value = FromEmail;
-            values.FromName.value = FromName;
+            values.username = username_value;
+            values.password = password_value;
+            values.server = server_name;
+            values.port = port_number;
+            values.FromEmail = FromEmail;
+            values.FromName = FromName;
 
             rw_smtp rw = new rw_smtp(filename);
             rw.write(values);
 
             structure_smtp s = rw.read();
 
-            Assert.AreEqual(username_value, s.username.value);
-            Assert.AreEqual(password_value, s.password.value);
-            Assert.AreEqual(server_name, s.server.value);
-            Assert.AreEqual(port_number, s.port.value);
-            Assert.AreEqual(FromEmail, s.FromEmail.value);
-            Assert.AreEqual(FromName, s.FromName.value);
+            Assert.AreEqual(username_value, s.username);
+            Assert.AreEqual(password_value, s.password);
+            Assert.AreEqual(server_name, s.server);
+            Assert.AreEqual(port_number, s.port);
+            Assert.AreEqual(FromEmail, s.FromEmail);
+            Assert.AreEqual(FromName, s.FromName);
         }
     }
 }

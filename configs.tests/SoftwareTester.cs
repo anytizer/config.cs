@@ -17,16 +17,16 @@ namespace configs.tests
             string notes_value = "my software notes";
 
             structure_software values = new structure_software();
-            values.id.value = id_generated.ToString();
-            values.notes.value = notes_value;
+            values.id = id_generated.ToString();
+            values.notes = notes_value;
 
             rw_software rw = new rw_software(filename);
             rw.write(values);
 
             structure_software s = rw.read();
 
-            Assert.AreEqual(id_generated.ToString(), s.id.value);
-            Assert.AreEqual(notes_value, s.notes.value);
+            Assert.AreEqual(id_generated.ToString(), s.id);
+            Assert.AreEqual(notes_value, s.notes);
         }
     }
 }

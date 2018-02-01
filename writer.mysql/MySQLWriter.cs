@@ -38,22 +38,22 @@ namespace writer.mysql
                 rw_mysql rw = new rw_mysql("mysql.settings");
                 structure_mysql s = rw.read();
 
-                textBox1.Text = s.host.value;
-                textBox2.Text = s.username.value;
-                textBox3.Text = s.password.value;
-                textBox4.Text = s.port.value;
-                textBox5.Text = s.database.value;
+                textBox1.Text = s.host;
+                textBox2.Text = s.username;
+                textBox3.Text = s.password;
+                textBox4.Text = s.port;
+                textBox5.Text = s.database;
             }
         }
 
         private void write()
         {
             structure_mysql s = new structure_mysql();
-            s.host.value = textBox1.Text;
-            s.username.value = textBox2.Text;
-            s.password.value = textBox3.Text;
-            s.port.value = textBox4.Text;
-            s.database.value = textBox5.Text;
+            s.host = textBox1.Text;
+            s.username = textBox2.Text;
+            s.password = textBox3.Text;
+            s.port = textBox4.Text;
+            s.database = textBox5.Text;
 
             rw_mysql rw = new rw_mysql("mysql.settings");
             rw.write(s);
