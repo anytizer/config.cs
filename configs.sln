@@ -14,7 +14,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "configs.tests", "configs.te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hashing.classes", "..\hashing.cs\src\hashing.classes\hashing.classes.csproj", "{76F1718A-4867-4BA1-881E-9491CC17281E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "writer.mysql", "mysql.writer\writer.mysql.csproj", "{DB538BE4-4439-4D25-9C98-ECC260A25633}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "writer.mysql", "writer.mysql\writer.mysql.csproj", "{DB538BE4-4439-4D25-9C98-ECC260A25633}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "writer.api", "writer.api\writer.api.csproj", "{F1B8ECE6-C808-4365-A7BF-C8D3F47EA12F}"
 EndProject
