@@ -19,16 +19,16 @@ namespace configs.tests
 
             structure_user values = new structure_user();
 
-            values.username.value = username_value;
-            values.password.value = password_value;
+            values.username = username_value;
+            values.password = password_value;
 
             rw_user rw = new rw_user(filename);
             rw.write(values);
 
             structure_user s = rw.read();
 
-            Assert.AreEqual(username_value, s.username.value);
-            Assert.AreEqual(password_value, s.password.value);
+            Assert.AreEqual(username_value, s.username);
+            Assert.AreEqual(password_value, s.password);
         }
     }
 }

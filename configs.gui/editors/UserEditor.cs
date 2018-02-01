@@ -17,8 +17,8 @@ namespace configs.gui.editors
         private void UserEditor_Load(object sender, EventArgs e)
         {
             structure_user s = read();
-            textBox2.Text = s.username.value;
-            textBox3.Text = s.password.value;
+            textBox2.Text = s.username;
+            textBox3.Text = s.password;
         }
 
         private structure_user read()
@@ -32,8 +32,8 @@ namespace configs.gui.editors
         private void button1_Click(object sender, EventArgs e)
         {
             structure_user s = new structure_user();
-            s.username.value = textBox2.Text;
-            s.password.value = textBox3.Text;
+            s.username = textBox2.Text;
+            s.password = textBox3.Text;
 
             rw_user rw = new rw_user(filename);
             rw.write(s);
