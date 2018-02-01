@@ -58,21 +58,21 @@
             this.textBox3.Location = new System.Drawing.Point(105, 38);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(140, 20);
-            this.textBox3.TabIndex = 16;
+            this.textBox3.TabIndex = 2;
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(105, 12);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(140, 20);
-            this.textBox2.TabIndex = 17;
+            this.textBox2.TabIndex = 1;
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(170, 64);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 14;
+            this.button1.TabIndex = 3;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -87,6 +87,9 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "UserEditor";
             this.Text = "User Credentials Editor";
             this.Load += new System.EventHandler(this.UserEditor_Load);
