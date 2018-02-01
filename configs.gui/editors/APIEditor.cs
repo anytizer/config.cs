@@ -7,10 +7,10 @@ namespace configs.gui.editors
 {
     public partial class APIEditor : Form
     {
-        string file = "api.settings";
+        string filename = "api.settings";
         public APIEditor(string file)
         {
-            this.file = file;
+            this.filename = file;
             InitializeComponent();
         }
 
@@ -23,10 +23,10 @@ namespace configs.gui.editors
 
         private structure_api read()
         {
-            rw_api rw = new rw_api(file);
-            structure_api f = rw.read();
+            rw_api rw = new rw_api(filename);
+            structure_api s = rw.read();
 
-            return f;
+            return s;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -35,7 +35,7 @@ namespace configs.gui.editors
             s.key.value = textBox1.Text;
             s.secret.value = textBox2.Text;
 
-            rw_api rw = new rw_api(file);
+            rw_api rw = new rw_api(filename);
             rw.write(s);
 
             this.Dispose();

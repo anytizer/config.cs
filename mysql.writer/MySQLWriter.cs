@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace mysql.writer
+namespace writer.mysql
 {
     public partial class MySQLWriter : Form
     {
