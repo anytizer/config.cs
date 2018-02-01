@@ -7,10 +7,10 @@ namespace configs.gui.editors
 {
     public partial class SoftwareEditor : Form
     {
-        string file = "sotware.settings";
+        string filename = "sotware.settings";
         public SoftwareEditor(string file)
         {
-            this.file = file;
+            this.filename = file;
             InitializeComponent();
         }
 
@@ -23,7 +23,7 @@ namespace configs.gui.editors
 
         private structure_software read()
         {
-            rw_software rw = new rw_software(file);
+            rw_software rw = new rw_software(filename);
             structure_software s = rw.read();
 
             return s;
@@ -35,7 +35,7 @@ namespace configs.gui.editors
             s.id.value = textBox1.Text;
             s.notes.value = textBox2.Text;
 
-            rw_software rw = new rw_software(file);
+            rw_software rw = new rw_software(filename);
             rw.write(s);
 
             this.Dispose();

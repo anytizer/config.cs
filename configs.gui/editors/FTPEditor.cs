@@ -7,10 +7,10 @@ namespace configs.gui.editors
 {
     public partial class FTPEditor : Form
     {
-        string file = "ftp.settings";
+        string filename = "ftp.settings";
         public FTPEditor(string file)
         {
-            this.file = file;
+            this.filename = file;
             InitializeComponent();
         }
 
@@ -26,7 +26,7 @@ namespace configs.gui.editors
 
         private structure_ftp read()
         {
-            rw_ftp rw = new rw_ftp(file);
+            rw_ftp rw = new rw_ftp(filename);
             structure_ftp f = rw.read();
 
             return f;
@@ -41,7 +41,7 @@ namespace configs.gui.editors
             s.port.value = textBox4.Text;
             s.path.value = textBox5.Text;
 
-            rw_ftp rw = new rw_ftp(file);
+            rw_ftp rw = new rw_ftp(filename);
             rw.write(s);
 
             this.Dispose();

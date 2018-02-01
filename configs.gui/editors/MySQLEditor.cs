@@ -7,11 +7,11 @@ namespace configs.gui.editors
 {
     public partial class MySQLEditor : Form
     {
-        string file = "mysql.settings";
+        string filename = "mysql.settings";
 
         public MySQLEditor(string file)
         {
-            this.file = file;
+            this.filename = file;
             InitializeComponent();
         }
 
@@ -27,7 +27,7 @@ namespace configs.gui.editors
 
         private structure_mysql read()
         {
-            rw_mysql rw = new rw_mysql(file);
+            rw_mysql rw = new rw_mysql(filename);
             structure_mysql m = rw.read();
 
             return m;
@@ -42,7 +42,7 @@ namespace configs.gui.editors
             s.port.value = textBox4.Text;
             s.database.value = textBox5.Text;
 
-            rw_mysql rw = new rw_mysql(file);
+            rw_mysql rw = new rw_mysql(filename);
             rw.write(s);
 
             this.Dispose();

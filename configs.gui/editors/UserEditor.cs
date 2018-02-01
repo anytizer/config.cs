@@ -7,10 +7,10 @@ namespace configs.gui.editors
 {
     public partial class UserEditor : Form
     {
-        string file;
+        string filename;
         public UserEditor(string file)
         {
-            this.file = file;
+            this.filename = file;
             InitializeComponent();
         }
 
@@ -23,7 +23,7 @@ namespace configs.gui.editors
 
         private structure_user read()
         {
-            rw_user rw = new rw_user(file);
+            rw_user rw = new rw_user(filename);
             structure_user s = rw.read();
 
             return s;
@@ -35,7 +35,7 @@ namespace configs.gui.editors
             s.username.value = textBox2.Text;
             s.password.value = textBox3.Text;
 
-            rw_user rw = new rw_user(file);
+            rw_user rw = new rw_user(filename);
             rw.write(s);
 
             this.Dispose();
