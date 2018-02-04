@@ -91,6 +91,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConfirmSomething.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmSomething.Designer.cs">
+      <DependentUpon>ConfirmSomething.cs</DependentUpon>
+    </Compile>
     <Compile Include="editors\APIEditor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,9 @@
     <Compile Include="Welcome.Designer.cs">
       <DependentUpon>Welcome.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ConfirmSomething.resx">
+      <DependentUpon>ConfirmSomething.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="editors\APIEditor.resx">
       <DependentUpon>APIEditor.cs</DependentUpon>
     </EmbeddedResource>
