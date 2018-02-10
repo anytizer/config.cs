@@ -13,7 +13,6 @@ namespace configs.tests
         {
             string filename = "user-test.settings";
 
-            Guid id_generated = Guid.NewGuid();
             string username_value = "uname";
             string password_value = "P002";
 

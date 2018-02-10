@@ -178,19 +178,19 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(84, 54);
+            this.textBox1.Location = new System.Drawing.Point(12, 111);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(320, 20);
+            this.textBox1.Size = new System.Drawing.Size(402, 20);
             this.textBox1.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 57);
+            this.label1.Location = new System.Drawing.Point(12, 95);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 13);
+            this.label1.Size = new System.Drawing.Size(92, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Writing To";
+            this.label1.Text = "Writing configs to:";
             // 
             // aPIAuthorizationToolStripMenuItem
             // 
