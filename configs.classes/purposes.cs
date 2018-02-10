@@ -1,5 +1,8 @@
 ﻿namespace configs.classes
 {
+    /**
+     * Paths to config files
+     */
     public class purposes
     {
         /**
@@ -31,5 +34,6 @@
         public string API_ONE = "api-one.settings";
         public string API_TWO = "api-two.settings";
         public string API_THREE = "api-three.settings";
+        public string API_AUTHORIZATION = "api-authorization.settings";
     }
 }

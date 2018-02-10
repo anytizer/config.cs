@@ -48,6 +48,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HeadersTester.cs" />
     <Compile Include="APITester.cs" />
     <Compile Include="FTPTester.cs" />
     <Compile Include="MySQLTester.cs" />

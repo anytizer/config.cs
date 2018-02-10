@@ -2,6 +2,9 @@
 
 namespace configs.classes.interfacing
 {
+    /**
+     * API Keys
+     */
     public abstract class config_api : iconfigwriter
     {
         public abstract structure_api read();

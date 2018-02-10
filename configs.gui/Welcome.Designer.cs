@@ -45,6 +45,8 @@
             this.facebookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.aPIAuthorizationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.authorizationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,7 +57,8 @@
             this.fTPToolStripMenuItem,
             this.softwareIDToolStripMenuItem,
             this.userToolStripMenuItem,
-            this.aPIsToolStripMenuItem1});
+            this.aPIsToolStripMenuItem1,
+            this.aPIAuthorizationToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(426, 24);
@@ -130,14 +133,14 @@
             // userOneToolStripMenuItem
             // 
             this.userOneToolStripMenuItem.Name = "userOneToolStripMenuItem";
-            this.userOneToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.userOneToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.userOneToolStripMenuItem.Text = "User One";
             this.userOneToolStripMenuItem.Click += new System.EventHandler(this.userOneToolStripMenuItem_Click);
             // 
             // userTwoToolStripMenuItem
             // 
             this.userTwoToolStripMenuItem.Name = "userTwoToolStripMenuItem";
-            this.userTwoToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.userTwoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.userTwoToolStripMenuItem.Text = "User Two";
             this.userTwoToolStripMenuItem.Click += new System.EventHandler(this.userTwoToolStripMenuItem_Click);
             // 
@@ -155,21 +158,21 @@
             // dropboxToolStripMenuItem
             // 
             this.dropboxToolStripMenuItem.Name = "dropboxToolStripMenuItem";
-            this.dropboxToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.dropboxToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.dropboxToolStripMenuItem.Text = "Dropbox";
             this.dropboxToolStripMenuItem.Click += new System.EventHandler(this.dropboxToolStripMenuItem_Click);
             // 
             // twitterToolStripMenuItem
             // 
             this.twitterToolStripMenuItem.Name = "twitterToolStripMenuItem";
-            this.twitterToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.twitterToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.twitterToolStripMenuItem.Text = "Twitter";
             this.twitterToolStripMenuItem.Click += new System.EventHandler(this.twitterToolStripMenuItem_Click);
             // 
             // facebookToolStripMenuItem
             // 
             this.facebookToolStripMenuItem.Name = "facebookToolStripMenuItem";
-            this.facebookToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.facebookToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.facebookToolStripMenuItem.Text = "Facebook";
             this.facebookToolStripMenuItem.Click += new System.EventHandler(this.facebookToolStripMenuItem_Click);
             // 
@@ -188,6 +191,21 @@
             this.label1.Size = new System.Drawing.Size(56, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Writing To";
+            // 
+            // aPIAuthorizationToolStripMenuItem
+            // 
+            this.aPIAuthorizationToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.authorizationToolStripMenuItem});
+            this.aPIAuthorizationToolStripMenuItem.Name = "aPIAuthorizationToolStripMenuItem";
+            this.aPIAuthorizationToolStripMenuItem.Size = new System.Drawing.Size(112, 20);
+            this.aPIAuthorizationToolStripMenuItem.Text = "API Authorization";
+            // 
+            // authorizationToolStripMenuItem
+            // 
+            this.authorizationToolStripMenuItem.Name = "authorizationToolStripMenuItem";
+            this.authorizationToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.authorizationToolStripMenuItem.Text = "Authorization";
+            this.authorizationToolStripMenuItem.Click += new System.EventHandler(this.authorizationToolStripMenuItem_Click);
             // 
             // Welcome
             // 
@@ -231,5 +249,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripMenuItem facebookToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aPIAuthorizationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem authorizationToolStripMenuItem;
     }
 }

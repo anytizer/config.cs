@@ -97,6 +97,12 @@
     <Compile Include="ConfirmSomething.Designer.cs">
       <DependentUpon>ConfirmSomething.cs</DependentUpon>
     </Compile>
+    <Compile Include="editors\HeadersEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editors\HeadersEditor.Designer.cs">
+      <DependentUpon>HeadersEditor.cs</DependentUpon>
+    </Compile>
     <Compile Include="editors\APIEditor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,9 @@
     </Compile>
     <EmbeddedResource Include="ConfirmSomething.resx">
       <DependentUpon>ConfirmSomething.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editors\HeadersEditor.resx">
+      <DependentUpon>HeadersEditor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="editors\APIEditor.resx">
       <DependentUpon>APIEditor.cs</DependentUpon>

@@ -46,13 +46,16 @@
   <ItemGroup>
     <Compile Include="interfacing\config_api.cs" />
     <Compile Include="interfacing\config_ftp.cs" />
+    <Compile Include="interfacing\config_headers.cs" />
     <Compile Include="interfacing\config_software.cs" />
     <Compile Include="interfacing\config_smtp.cs" />
     <Compile Include="interfacing\config_user.cs" />
+    <Compile Include="readerwriter\rw_headers.cs" />
     <Compile Include="readerwriter\rw_software.cs" />
     <Compile Include="readerwriter\rw_smtp.cs" />
     <Compile Include="readerwriter\rw_user.cs" />
     <Compile Include="readerwriter\rw_api.cs" />
+    <Compile Include="structures\structure_headers.cs" />
     <Compile Include="structures\structure_software.cs" />
     <Compile Include="structures\structure_smtp.cs" />
     <Compile Include="structures\structure_user.cs" />

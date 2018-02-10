@@ -118,5 +118,13 @@ namespace configs.gui
 
             set(f);
         }
+
+        private void authorizationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HeadersEditor f = new HeadersEditor(names.API_AUTHORIZATION);
+            f.Text = "API Headers Authorization";
+
+            set(f);
+        }
     }
 }
