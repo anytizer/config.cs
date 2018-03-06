@@ -32,7 +32,7 @@ namespace configs.classes.interfacing
         {
             if (encode_output)
             {
-                hasher h = new hasher();
+                Hasher h = new Hasher();
                 string s_encrypted = h.base64_encode(s);
                 return s_encrypted;
             }
@@ -46,7 +46,7 @@ namespace configs.classes.interfacing
         {
             if (encode_output)
             {
-                hasher h = new hasher();
+                Hasher h = new Hasher();
                 string s_decrypted = h.base64_decode(s);
                 return s_decrypted;
             }
